@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Capt Pete</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://use.typekit.net/utn0gmi.css">
+
+</head>
+    
+    <style>
+
+        
+     .section {
+            position: relative;
+            width: 100%;
+            height: 730px; 
+            overflow: hidden;
+        }
+        .bg-layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(240, 240, 240); 
+        }
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .map-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+   
+      
+            
+        
+        
+        
+        </head>
+    </style>    
+
+<div id="wrapper">   
+        
+<nav id="navbar">
+        <img src="images/lifesaver.png" alt="Left Image" class="nav-image left-image">
+        <ul id="nav-links">
+            <li1><h1><a href="home.html">Home</a></h1></li1>
+            <li1><h1><a href="about.html">About</a></h1></li1>
+            <li1><h1><a href="booking.html">Booking</a></h1></li1>
+            <li1><h1><a href="contact.html">Contact</a></h1></li1>
+        </ul>
+        <img src="images/lifesaver.png" alt="Right Image" class="nav-image right-image">
+    </nav>
+    </div>
+    <H1>Booking</H1>
+    <H1>Map of Popular Destinations</H1>
+    <section class="section">
+    <div class="bg-layer"></div>
+    <div class="iframe-container">
+        <iframe
+            class="map-iframe"
+            title="Map"
+            src="https://www-captain-pete-com.filesusr.com/html/6db7a3_ddb2f1663b44b71fcb02ad283f884377.html">
+        </iframe>
+    </div>
+</section>
+ <div id="pricing-container">
+     
+    <div id="price-col1">
+                
+<H2>Pricing</H2>
+        <ul>1-2 people $70/hr</ul>
+        <ul>3-4 people$90/hr</ul>
+        <ul>5-6 people $110/hr</ul>
+        <ul>Up to 6 people max per trip</ul>
+</div>
+     
+                 <div id="price-col2">
+                   <H2>Booking and Payment</H2>
+<ul>Captain Pete accepts cash, Venmo, and credit cards. Book and pay online.</ul>
+     </div>   
+ 
+    
+</div>  
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        #navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87B5F6;
+    padding: 20px 50px;
+    position: relative;
+}
+
+/* Styling for the images on the left and right sides of the navbar */
+#navbar .nav-image {
+    width: 125px;
+    height: 125px;
+}
+
+#navbar .left-image {
+    position: absolute;
+    left: 20px;
+}
+
+#navbar .right-image {
+    position: absolute;
+    right: 20px;
+}
+
+/* Styling for the navigation links */
+#nav-links {
+    font-family: "antonia-variable", sans-serif;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+}
+
+#nav-links li1 {
+    padding-right: 35px;
+    padding-left: 35px;
+    margin: 0 15px;
+}
+
+#nav-links a {
+    color: black;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+/* Corrected hover effect for navigation links */
+#nav-links a:hover {
+    color: #F49A87;  /* Change color on hover */
+}
+        
+        }    
+        ul {line-height: 5px;
+    font-family: "kranto-display", sans-serif;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration-color: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(0, 0, 0);
+            
+        }
+        
+        #pricing-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: center;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #price-col1, #price-col2 {
+            flex: 1;
+        }
+
+        #price-col1 h2, #price-col2 h2 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        #price-col1 ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        #price-col1 ul li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        #price-col1 ul li span {
+            font-weight: bold;
+            color: rgb(51, 51, 51);
+        }
+
+        #price-col1 p {
+            text-align: center;
+            font-size: 1em;
+            margin-top: 10px;
+            color: rgb(85, 85, 85);
+        }
+
+        #price-col2 p {
+            text-align: justify;
+            font-size: 1em; /* is equal to the current font size*/
+            line-height: 1.6;
+        }
+        body {
+            
+            font-family: "kranto-display", sans-serif;
+            line-height: 1.6;
+           
+            background-color: rgb(249, 249, 249);
+        }
+
+        h1 {
+            font-family: "antonia-variable", sans-serif;
+            text-align: center;
+            font-size: 2em; /*twith the size of the normal font size*/
+            margin: 20px 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .route {
+            display: grid;
+            grid-template-columns: 150px 1fr 120px;
+            
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .route img {
+            width: 250px;
+            border-radius: 8px;
+        }
+
+        .route-content h2 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .route-content ul {
+            
+            text-align: justify;
+            list-style: disc inside;
+            margin-left: 200px;
+            padding: 0;
+        }
+
+        .route-content ul li {
+            
+            margin-bottom: 5px;
+        }
+
+        .route-content p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .book-now {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #f08080;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            text-align: center;
+        }
+
+        .book-now:hover {
+            background-color: rgb(224, 107, 107);
+        }
+
+        .page-nav {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .page-nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .page-nav a:hover {
+            color: rgb(240, 128, 128);
+        }
+        H3{
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        H2{
+            text-align: center;
+        }
+        P{
+            text-align: center;
+        }
+        
+        
+      #what2bring-container{
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    max-width: 900px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+#what2bring {
+    display: flex;
+    /*justify-content: space-between; */
+    margin-left: 250px;
+    margin-right: 100px;
+    
+}
+
+.column {
+    flex: 1; /* makes all columns equal in size */
+    max-width: 200px; /* all columns have a same width */
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.column h3 {
+    font-size: 1.2;
+    margin-bottom: 10px;
+}
+    </style>
+
+<body>
+    <div class="container">
+        <h1>Route Pricing</h1>
+
+        <div class="route">
+            <img src="img/toledo-bar-hop.jpg" alt="Toledo Bar Hop">
+        <div class="route-content">
+                <h2>Toledo / Perrysburg Bar Hop</h2>
+                <ul>
+                    <li>Enjoy your own beverages along the way</li>
+                    <li>Forget about parking and leave the driving to me. Great for Mud Hens games too.</li>
+                    <li>Approx 1.5 hours round trip.</li>
+                    <li>Call or email to discuss pickup/dropoff times.</li>
+                </ul>
+                <ul>1-2 people $165 / 3-4 people $180 / 5-6 people $195</ul>
+            </div>
+            <a href="#" class="book-now">Book Now</a>
+        </div>
+
+        <div class="route">
+            <img src="img/webbers.jpg" alt="Dinner Trip to Webber's">
+            <div class="route-content">
+                <h2>Dinner Trip to Webber's</h2>
+                <ul>
+                    <li>Located in Pointe Place, approximately 90-minute trip (each way)</li> 
+                    <li>2 hours allotted for drinks and dinner</li>
+                    <li><a href="#">Webber's website</a></li>  
+                </ul>
+                <ul>5-6 people $315 / 3-4 people $285 / 1-2 people $255</ul>
+            </div>
+            <a href="#" class="book-now">Book Now</a>
+        </div>
+
+        <div class="route">
+            <img src="img/lighthouse.jpg" alt="Woodtick Island Sandbar">
+            <div class="route-content">
+                <h2>Woodtick Island Sandbar</h2>
+                <ul>
+                    <li>Great for Bachelor/Bachelorette parties or family fun in the water!</li>
+                    <li>Port of call is Rossford Marina</li>
+                    <li>Swim, drink, play beersby frisbee, chill in a floating relaxation station</li>
+                    <li>Stop in downtown Toledo for restaurant and/or bar hop</li>
+                    <li>Approx 2.5 hours round trip travel time</li>
+                </ul>
+                <ul>5-6 people $240 / 3-4 people $215 / 1-2 people $190 (Addtl $15/hr wait time)</ul>
+            </div>
+            <a href="#" class="book-now">Book Now</a>
+        </div>
+
+        <div class="route">
+            <img src="img/sun.jpg" alt="Customized Trip">
+            <div class="route-content">
+                <h2>Customized Trip</h2>
+                <ul>
+                    <li>Plan your trip your way!</li>
+                    <li>Give Captain Pete a call to discuss your ideas and for pricing.</li>
+                </ul>
+            </div>
+            <a href="#" class="book-now">Book Now</a>
+        </div>
+
+        <div class="page-nav">
+            <a href="#">Page up</a>
+            <a href="#"></a>
+        </div>
+        
+        <div class="faq-container">
+        <h2>FAQs</h2>
+        <p>If you don't see an answer to your question(s) below, send an email or call and I'll be happy to respond!</p>
+
+        <h3>Can I bring alcoholic beverages?</h3>
+        <p>Yes.</p>
+
+        <h3>Can I bring food?</h3>
+        <p>Yes, a table is provided. I also have a tabletop propane grill upon request.</p>
+
+        <h3>Can children come?</h3>
+        <p>Yes, however, if they are less than 90 lbs you will need to bring the appropriate child-size life jacket.</p>
+
+        <h3>Can I bring my pet?</h3>
+        <p>No pets are allowed. (Except your spouse.)</p>
+
+        <h3>Can I go skiing or tubing?</h3>
+        <p>Insurance regulations prohibit water sports activities.</p>
+
+        <h3>Can I bring more than 6 people?</h3>
+        <p>No. U.S. Coast Guard regulations prohibit more than 6 people chartered on a non-purpose-built vessel.</p>
+
+        <h3>Can I make more than 1 stop?</h3>
+        <p>Absolutely. Just call or email me to discuss where you want to go.</p>
+
+        <h3>Are tobacco products or smoking allowed?</h3>
+        <p>
+            Chewing tobacco or vape products are fine. Cigarettes, cigars, or marijuana in any form are not allowed. 
+            Marijuana in any form is not permitted to be used or in your possession. As we will be in international waters, federal law prohibits it.
+        </p>
+
+        <div class="things-to-consider">
+            <h2>Things to Consider</h2>
+            <p>There is no bathroom onboard (other than off the back of the boat). I do have a portable porta-potti available if requested. Or I can stop in downtown Toledo or Rossford Marina if the need arises.</p>
+            <p>It can get chilly on the water so bring pants and a sweatshirt or blanket.</p>
+            <h3>Captain Pete trips are all BYOB.</h3>
+        </div>
+    </div>
+        <div class="page-nav">
+            <a href="#">Page up</a>
+            <a href="#"></a>
+        </div>
+
+    <div id="what2bring-container">
+    <h2>What to Bring</h2>
+    <div id="what2bring">
+        <div class="column">
+            <h3>Child Size Lifejacket</h3>
+                <img src="img/child_jacket.png" alt="child's lifejacket" style="width: 200px; height: 270px; border-radius: 14px;">
+                    <h3>Bring the appropriate size life jacket for children less than 90 lbs.</h3>
+        </div>
+        <div class="column">
+            <h3>Sweatshirt/Blanket</h3>
+            <img src="img/blanket_2.jpg" alt="blanket" style="width: 180px; height: auto; border-radius: 14px;">
+            <h3>It can get chilly on the water so bring pants and a sweatshirt or blanket.</h3>
+        </div>
+        <div class="column">
+            <h3>Food</h3>
+            <img src="img/food.jpg" alt="bring food" style="width: 200px; height: auto; border-radius: 14px;">
+             <h3>Bring food! A table is provided. I also have a table top propane grill upon request.</h3>
+        </div>
+               
+        <div class="column">
+            <h3>Alcoholic Beverages</h3>
+           <img src="img/wine_2.jpg" alt="Wine glass" style="width: 210px; height: auto; border-radius: 14px;">
+            <h3>*Captain Pete trips are all BYOB</h3>
+        </div>
+    </div>
+</div>
+    </div>
+</body>
+</html>
